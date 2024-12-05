@@ -10,3 +10,20 @@ $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 $mqMinWidth: 420px;
+
+// Bootstrap theme colors
+$theme-colors: (
+ "primary": #fabada // pon el código de color que prefieras
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$enable-shadow: true;
+$enable-transitions: true;
