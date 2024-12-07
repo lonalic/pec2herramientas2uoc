@@ -21,7 +21,8 @@
       font-size: convertToRem(16);
       line-height: convertToRem(35);
 
-      p {
+      &-email,
+      &-phone {
         margin: 0;
       }
     }
@@ -59,6 +60,10 @@
     &__social {
       display: flex;
       gap: convertToRem(8);
+
+      &-icon {
+        font-size: convertToRem(18);
+      }
     }
 
     &__bottom {
