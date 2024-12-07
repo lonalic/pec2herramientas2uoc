@@ -1,0 +1,31 @@
+@layer base {
+  .link {
+    color: map-get($theme-colors, "tertiary-dark");
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      transition: color 0.3s ease;
+      color: map-get($theme-colors, "tertiary");
+    }
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: map-get($theme-colors, "quaternary");
+  color: map-get($theme-colors, "tertiary");
+
+  &__content {
+    flex: 1;
+  }
+}
+
+.main > main {
+  // Ocupar todo el espacio disponible, para que el footer no esté a mitad de página
+  flex: 1;
+}

@@ -13,6 +13,6 @@ import * as bootstrap from 'bootstrap';
  */
 
 +( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
+  const test = "test";
+  console.log(`Hello, ${test}!`);
 } )();

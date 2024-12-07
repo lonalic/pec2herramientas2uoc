@@ -5,24 +5,30 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-
-$mqMinWidth: 420px;
-
 // Bootstrap theme colors
 $theme-colors: (
- "primary": #fabada // pon el código de color que prefieras
+  "primary": $indigo-400,
+  "secondary": $indigo-100,
+  "tertiary-super-dark": $teal-900,
+  "tertiary-dark": $teal-800,
+  "tertiary": $teal-600,
+  "quaternary": $teal-100,
+  "success": $teal-500,
+  "danger": $red-600,
+  "warning": $yellow-400,
+  "info": $cyan-400,
+  "light": $gray-100,
+  "dark": $gray-600,
+  "base": $gray-700,
 );
-
+// Override Bootstrap default breakpoints
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
+  xxl: 1400px,
 );
 
 $enable-shadow: true;

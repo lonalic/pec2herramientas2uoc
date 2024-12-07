@@ -1,23 +1,53 @@
 <!doctype html>
-
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Página de inicio de Crevillent">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jornadas de Seguridad - Página principal con información y acceso a todas las secciones del evento." />
+    <title>Jornadas de Seguridad - Inicio</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=BioRhyme:wght@200..800&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="./assets/styles/main.scss">
-    <title>PEC 2</title>
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
   </head>
-  <body>
-    <include src="./views/header.html"></include>
-    <main class="main py-4 px-3 mx-auto">
-          </main>
+  <body class="main">
+    <include src="./views/header_index.html"></include>
+
+    <main class="home">
+      <section class="home__hero">
+        <div class="home__hero__grid">
+          <div class="home__hero__image">
+            <figure class="home__hero__caption">
+              <img
+                src="./assets/images/poster.avif"
+                alt="Imagen representativa de seguridad informática" />
+              <figcaption class="home__hero__caption__description">
+                © Unsplash
+              </figcaption>
+            </figure>
+          </div>
+          <div class="home__hero__content">
+            <h1 class="home__hero__title">Jornadas de Seguridad Informática</h1>
+            <p class="home__hero__text">
+              Apúntate a las jornadas de seguridad más importantes del año.
+              Aprenderás conceptos muy importantes de los mejores profesionales
+              del sector.
+            </p>
+          </div>
+          <div class="home__hero__cta">
+            <a href="./speakers.html">
+              <button class="btn btn-primary">Mira los conferencistas</button>
+            </a>
+            <a href="./article.html">
+              <button class="btn btn-secondary">Más Información</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>
