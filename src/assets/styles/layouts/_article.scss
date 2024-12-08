@@ -28,73 +28,74 @@
       @include media-breakpoint-up(md) {
         flex-direction: row;
       }
+    }
 
-      .article__quote {
-        flex: 1;
-        padding: convertToRem(16);
-        background-color: map-get($theme-colors, "light");
-        border-left: convertToRem(4) solid map-get($theme-colors, "primary");
-      }
+    &__paragraph {
+      flex: 1;
+      line-height: convertToRem(24);
+    }
 
-      .article__quote-source {
+    &__quote {
+      flex: 1;
+      padding: convertToRem(16);
+      background-color: map-get($theme-colors, "light-dark");
+      border-left: convertToRem(4) solid map-get($theme-colors, "primary");
+
+      &-source {
         display: block;
         margin-top: convertToRem(8);
         font-size: convertToRem(14);
         font-weight: bold;
         color: map-get($theme-colors, "tertiary-dark");
       }
-
-      .article__paragraph {
-        flex: 1;
-        line-height: convertToRem(24);
-      }
     }
 
     &__container-list {
       padding: convertToRem(16);
+    }
 
-      .article__list {
-        padding-left: 0;
-        list-style: none;
+    &__list {
+      padding-left: 0;
+      list-style: none;
 
-        .article__list-item {
-          display: flex;
-          margin-bottom: convertToRem(16);
+      &-item {
+        display: flex;
+        margin-bottom: convertToRem(16);
+      }
 
-          .article__list-number {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: convertToRem(32);
-            height: convertToRem(32);
-            font-weight: bold;
-            color: map-get($theme-colors, "primary");
-            border: convertToRem(2) solid map-get($theme-colors, "primary");
-            border-radius: 30%;
-          }
+      &-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: convertToRem(32);
+        height: convertToRem(32);
+        margin-left: convertToRem(8);
+        font-weight: bold;
+        color: map-get($theme-colors, "primary");
+        border: convertToRem(2) solid map-get($theme-colors, "primary");
+        border-radius: 30%;
+      }
 
-          .article__list-copy {
-            display: flex;
-            flex-direction: column;
-            margin-left: convertToRem(8);
+      &-copy {
+        display: flex;
+        flex-direction: column;
+        margin-left: convertToRem(8);
 
-            strong {
-              margin-bottom: convertToRem(8);
-            }
-
-            p {
-              font-size: convertToRem(14);
-              line-height: convertToRem(24);
-              color: map-get($theme-colors, "dark");
-            }
-          }
+        strong {
+          margin-bottom: convertToRem(8);
         }
 
-        .article__list-item:is(:first-child, :last-child) {
-          padding: convertToRem(8);
-          background-color: map-get($theme-colors, "light");
-          border-radius: $border-radius;
+        p {
+          font-size: convertToRem(14);
+          line-height: convertToRem(24);
+          color: map-get($theme-colors, "dark");
         }
+      }
+
+      &-item:is(:first-child, :last-child) {
+        padding: convertToRem(8) 0;
+        background-color: map-get($theme-colors, "light");
+        border-radius: $border-radius;
       }
     }
 
