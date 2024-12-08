@@ -2,14 +2,14 @@
   .header {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
+    align-items: center;
     padding: 1rem;
-    container-type: inline-size;
     color: map-get($theme-colors, "dark");
+    container-type: inline-size;
     &--home {
-      background-color: map-get($theme-colors, "primary");
       color: map-get($theme-colors, "secondary");
+      background-color: map-get($theme-colors, "primary");
       .link {
         color: map-get($theme-colors, "light");
 
@@ -21,10 +21,10 @@
     }
 
     &__logo {
-      text-align: center;
       align-self: center;
       font-size: 1.5rem;
       font-weight: bold;
+      text-align: center;
     }
 
     &__nav {
@@ -35,17 +35,17 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      list-style: none;
-      margin: 0;
       padding: 0;
+      margin: 0;
+      list-style: none;
     }
 
     @include media-breakpoint-up(md) {
       flex-direction: row;
       justify-content: space-between;
       &__logo {
-        text-align: left;
         align-self: flex-start;
+        text-align: left;
       }
 
       &__nav {

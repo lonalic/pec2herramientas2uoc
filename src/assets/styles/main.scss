@@ -17,8 +17,8 @@
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
-@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "@fortawesome/fontawesome-free/scss/brands.scss";
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/brands";
 
 @import "bootstrap/scss/functions";
 // Necessary for the colors
@@ -34,7 +34,7 @@
 
 // Import all of Bootstrap's CSS
 @layer bootstrap {
-  @import "bootstrap/scss/bootstrap.scss";
+  @import "bootstrap/scss/bootstrap";
 }
 // @import "bootstrap/scss/bootstrap.scss";
 
