@@ -3,7 +3,7 @@
  * see commented examples below
  */
 
-import * as bootstrap from 'bootstrap';
+import * as bootstrap from "bootstrap"
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
@@ -11,8 +11,7 @@ import * as bootstrap from 'bootstrap';
 /**
  * Write any other JavaScript below
  */
-
-+( function() {
-  const test = "test";
-  console.log(`Hello, ${test}!`);
-} )();
+;+(function () {
+  const test = "test"
+  console.log(`Hello, ${test}!`)
+})()
