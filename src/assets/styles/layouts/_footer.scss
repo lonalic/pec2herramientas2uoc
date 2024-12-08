@@ -6,15 +6,15 @@
     padding: convertToRem(16);
     margin-top: auto;
     text-align: center;
-    border-top: 1px solid map-get($theme-colors, "tertiary");
     background-color: rgba(
       $color: map-get($theme-colors, "tertiary"),
       $alpha: 0.1
     );
+    border-top: 1px solid map-get($theme-colors, "tertiary");
 
     &__info {
-      margin-bottom: convertToRem(16);
       margin-top: convertToRem(8);
+      margin-bottom: convertToRem(16);
     }
 
     &__contact {
@@ -36,10 +36,10 @@
       display: flex;
       flex-direction: column;
       gap: convertToRem(8);
-      list-style: none;
       padding: 0;
-      margin: 0;
       padding-left: 0;
+      margin: 0;
+      list-style: none;
     }
 
     @include media-breakpoint-up(md) {
@@ -67,13 +67,13 @@
     }
 
     &__bottom {
-      border-top-style: double;
-      border-top-color: map-get($theme-colors, "tertiary-dark");
-      padding-top: convertToRem(16);
       display: flex;
       flex-direction: column;
-      align-items: center;
       gap: convertToRem(16);
+      align-items: center;
+      padding-top: convertToRem(16);
+      border-top-color: map-get($theme-colors, "tertiary-dark");
+      border-top-style: double;
 
       @include media-breakpoint-up(md) {
         flex-direction: row;

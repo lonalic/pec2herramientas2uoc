@@ -4,16 +4,16 @@
     flex-direction: column;
 
     &__hero {
-      container-type: inline-size;
-      background-color: map-get($theme-colors, "primary");
-      color: map-get($theme-colors, "light");
       padding: convertToRem(16);
+      color: map-get($theme-colors, "light");
+      background-color: map-get($theme-colors, "primary");
+      container-type: inline-size;
 
       &-grid {
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: convertToRem(16);
+        align-items: center;
 
         @supports (display: grid) {
           display: grid;
@@ -34,9 +34,9 @@
       }
 
       &-cta {
-        grid-area: cta;
         display: flex;
         flex-direction: column;
+        grid-area: cta;
         gap: convertToRem(8);
         justify-content: center;
 
