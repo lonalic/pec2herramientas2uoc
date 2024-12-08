@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Galería de Jornadas de Seguridad Informática" />
+    <title>Jornadas de Seguridad - Galería</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+  </head>
+  <body class="main">
+    <include src="./views/header_gallery.html"></include>
+    <main class="gallery">
+      <section class="gallery__container">
+        <h1 class="gallery__title">Galería de las jornadas</h1>
+        <div
+          id="carouselGallery"
+          class="gallery__carousel carousel slide"
+          data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="gallery__carousel-item carousel-item active">
+              <img
+                src="./assets/images/poster.avif"
+                class="gallery__carousel-item-image d-block w-100"
+                alt="Seguridad Informática - Evento 1" />
+              <div class="carousel-caption gallery__carousel-item-caption">
+                <h5 class="gallery__carousel-item-caption-title">
+                  Ciberseguridad en el hogar
+                </h5>
+                <p class="gallery__carousel-item-caption-text">
+                  Consejos para proteger tu hogar de ciberataques.
+                </p>
+                <figcaption class="gallery__carousel-item-caption-author">
+                  © Unsplash
+                </figcaption>
+              </div>
+            </div>
+            <div class="gallery__carousel-item carousel-item">
+              <img
+                src="./assets/images/laptop_article.jpg"
+                class="gallery__carousel-item-image d-block w-100"
+                alt="Seguridad Informática - Evento 2" />
+              <div class="carousel-caption gallery__carousel-item-caption">
+                <h5 class="gallery__carousel-item-caption-title">
+                  Protección y Privacidad
+                </h5>
+                <p class="gallery__carousel-item-caption-text">
+                  Las mejores prácticas en seguridad informática.
+                </p>
+                <figcaption class="gallery__carousel-item-caption-author">
+                  © Unsplash
+                </figcaption>
+              </div>
+            </div>
+            <div class="gallery__carousel-item carousel-item">
+              <img
+                src="./assets/images/security_card.jpg"
+                class="gallery__carousel-item-image d-block w-100"
+                alt="Seguridad Informática - Evento 3" />
+              <div class="carousel-caption gallery__carousel-item-caption">
+                <h5 class="gallery__carousel-item-caption-title">
+                  Innovación en Anti-Malware
+                </h5>
+                <p class="gallery__carousel-item-caption-text">
+                  Lo último en protección contra malware.
+                </p>
+                <figcaption class="gallery__carousel-item-caption-author">
+                  © Unsplash
+                </figcaption>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev gallery__carousel-control"
+            type="button"
+            data-bs-target="#carouselGallery"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next gallery__carousel-control"
+            type="button"
+            data-bs-target="#carouselGallery"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script src="./assets/scripts/main.js" type="module"></script>
+  </body>
+</html>
