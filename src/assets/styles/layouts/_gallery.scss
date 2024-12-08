@@ -8,27 +8,31 @@
     }
 
     &__carousel {
-      margin-top: convertToRem(16);
       width: 100%;
       height: auto;
-      border-radius: $border-radius;
+      margin-top: convertToRem(16);
       overflow: hidden;
+      border-radius: $border-radius;
 
       &-item {
         position: relative;
 
         &-image {
-          object-fit: cover;
           width: 100%;
           height: auto;
+          object-fit: cover;
         }
 
         &-caption {
+          padding: convertToRem(16);
+          color: map-get($theme-colors, "light");
           background: linear-gradient(
             to bottom,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.8)
+            rgb(0 0 0 / 0.5),
+            rgb(0 0 0 / 0.8)
           );
+          border-radius: $border-radius;
+          container-type: inline-size;
           @supports (
             (background: color(display-p3 0.4 0.3 0.2 / 0.5)) and
               (background: hwb(150 10% 20% / 0.8))
@@ -39,10 +43,6 @@
               hwb(150 10% 20% / 0.8)
             );
           }
-          padding: convertToRem(16);
-          border-radius: $border-radius;
-          color: map-get($theme-colors, "light");
-          container-type: inline-size;
 
           &-title {
             margin-bottom: convertToRem(8);
@@ -51,8 +51,8 @@
           }
 
           &-text {
-            font-size: convertToRem(12);
             margin-bottom: convertToRem(8);
+            font-size: convertToRem(12);
           }
 
           @container (min-width: 200px) {
@@ -65,8 +65,8 @@
           }
 
           &-author {
-            color: map-get($theme-colors, "secondary-light");
             font-size: convertToRem(12);
+            color: map-get($theme-colors, "secondary-light");
           }
         }
       }
