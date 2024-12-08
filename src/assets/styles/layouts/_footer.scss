@@ -28,6 +28,7 @@
     }
 
     &__logo {
+      font-family: $font-family-lato;
       font-size: convertToRem(18);
       font-weight: bold;
     }
