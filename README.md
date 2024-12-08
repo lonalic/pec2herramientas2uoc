@@ -4,7 +4,7 @@ Este proyecto está basado en el boilerplate de Jordi Tarrida de la UOC, versió
 
 ## Requisitos
 
-[Node.js](http://nodejs.org/) >= 20.16.0
+[Node.js](http://nodejs.org/) >= 22.12.0
 
 ## Instalación
 
