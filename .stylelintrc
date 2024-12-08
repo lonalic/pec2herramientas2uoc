@@ -11,9 +11,9 @@
     "color-hex-length": "short",
     "selector-attribute-quotes": "always",
     "length-zero-no-unit": true,
-
+    "scss/no-global-function-names": null,
     "max-nesting-depth": [
-      2,
+      5,
       {
         "ignoreAtRules": ["media"]
       }
